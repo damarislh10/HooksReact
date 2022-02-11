@@ -29,22 +29,18 @@ const CategoriasApp = () => {
 
   useEffect(() => {
     imgGif().then((imgData) => setCategorias(imgData)); // array que nos retorna la data
-  }, [search]); // poner parametros de escucha que cambie
+  }, [search]); 
 
   return (
     <div>
-      <h1>Componentes con Hooks</h1>
+      <h1 className="mt-4 text-center">Componentes con Hooks</h1>
       <CategoriesAdd setSearch={setSearch} />
-      <ol>
+      <div>
         <CategoriasList categorias={categorias} />
-      </ol>
+      </div>
 
     </div>
   );
 };
 
 export default CategoriasApp;
-
-      /* <Button variant="primary" onClick={handleAgregar}>
-        Agregar
-      </Button> */

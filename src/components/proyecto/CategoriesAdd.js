@@ -20,8 +20,8 @@ const CategoriesAdd = ({ setSearch }) => {
   return (
     <div>
       <Form onSubmit={handleSubmit}>
-        <Form.Group ref={searchref} className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Busqueda</Form.Label>
+        <Form.Group ref={searchref} className="m-auto"  style={{ width: "15rem" }}  controlId="formBasicEmail">
+          <Form.Label>Realiza una busqueda</Form.Label>
           <Form.Control
             name="palabra"
             value={palabra}

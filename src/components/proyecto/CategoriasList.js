@@ -6,9 +6,9 @@ const CategoriasList = ({ categorias }) => {
   return (
     <div>
       {categorias.map((cate, index) => (
-        <li key={index}>
+        <div key={index}>
           <Cards categoria={cate} />
-        </li>
+        </div>
       ))}
     </div>
   );

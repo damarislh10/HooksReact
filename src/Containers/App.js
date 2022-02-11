@@ -4,7 +4,6 @@ import CategoriasApp from "../components/proyecto/CategoriasApp";
 function App() {
   return (
     <div className="App">
-      <Counter />
       <CategoriasApp />
     </div>
   );
